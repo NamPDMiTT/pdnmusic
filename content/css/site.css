@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 1vw; */
+}
+
+.containers {
+    width: 70%;
+    margin: 25px auto;
+}
+
+.demo {
+    background-color: green;
+}
+
+.navbar {
+    background: #000000
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fec400;
+    transition: 0.4s
+}
+
+.nav-item:hover::after {
+    width: 100%
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white
+}
+
+.nav-link {
+    padding: 25px 5px;
+    transition: 0.2s
+}
+
+.box__left {
+    width: 74%;
+    margin-right: 2%;
+}
+
+.banner {
+    height: 450px;
+}
+
+.index__products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+.index__products a {
+    text-decoration: none;
+    color: black;
+}
+
+.index__img {
+    height: 200px;
+}
+
+.index__img:hover {
+    opacity: 0.75;
+}
+
+.box__right {
+    width: 24%;
+}
+
+.img__info {
+    width: 150px;
+    height: 150px;
+}
+
+.signup__forgot ul {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.signup__forgot ul li a {
+    text-decoration: none;
+}
+
+.signup__forgot ul li a:hover {
+    text-decoration: underline;
+}
+
+.list__dm a {
+    display: block;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: var(--bs-list-group-bg);
+    border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+    color: black;
+    text-align: inherit;
+}
+
+.list__dm a:hover {
+    color: blue;
+    background-color: rgb(230, 230, 230);
+}
+
+.top10 div {
+    display: flex;
+    gap: 5px;
+    margin: 8px 0;
+}
+
+.top10_img {
+    width: 10%;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.top10 div a {
+    text-decoration: none;
+}
+
+.top10 div a:hover {
+    text-decoration: underline;
+}
+
+.hang_cung_loai li a {
+    text-decoration: none;
+}
+
+.hang_cung_loai li a:hover {
+    text-decoration: underline;
+}
+
+.readonly {
+    background-color: #e9ecef !important;
+    opacity: 1;
+}
